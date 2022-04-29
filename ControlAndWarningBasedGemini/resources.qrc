@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/open.png</file>
+        <file>icons/pause_green.png</file>
+        <file>icons/play_green.png</file>
+        <file>icons/record_red.png</file>
+        <file>icons/record_white.png</file>
+        <file>icons/stop_red.png</file>
+        <file>icons/online.png</file>
+        <file>icons/online_green.png</file>
+        <file>icons/grid.png</file>
+        <file>icons/grid_on.png</file>
+        <file>icons/text.png</file>
+        <file>icons/text_on.png</file>
+	  <file>icons/reset.png</file>
+    </qresource>
+</RCC>

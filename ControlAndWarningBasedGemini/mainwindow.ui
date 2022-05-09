@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>进水致灾生物预处理系统</string>
+   <string>进水致灾生物监视系统</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,1">
@@ -106,16 +106,16 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_SonarID">
+          <widget class="QLabel" name="label_frequency">
            <property name="text">
-            <string>SonarId</string>
+            <string>Frequency</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="spinBox_SonarID">
+          <widget class="QSpinBox" name="spinBox_Frequency">
            <property name="maximum">
-            <number>7</number>
+            <number>1</number>
            </property>
           </widget>
          </item>
@@ -383,7 +383,7 @@
      </layout>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QVBoxLayout" name="warning_vertical_layout">
       <property name="sizeConstraint">
        <enum>QLayout::SetMinimumSize</enum>
       </property>
@@ -423,8 +423,8 @@
     <property name="title">
      <string>配置(C)</string>
     </property>
-    <addaction name="actionSonar"/>
-    <addaction name="actionDisplay"/>
+    <addaction name="action_config_sonar"/>
+    <addaction name="action_config_warning"/>
     <addaction name="actionAlgorithm"/>
    </widget>
    <widget class="QMenu" name="menu_P">
@@ -460,14 +460,14 @@
     <string>Record</string>
    </property>
   </action>
-  <action name="actionSonar">
+  <action name="action_config_sonar">
    <property name="text">
     <string>Sonar</string>
    </property>
   </action>
-  <action name="actionDisplay">
+  <action name="action_config_warning">
    <property name="text">
-    <string>Display</string>
+    <string>Warning Info</string>
    </property>
   </action>
   <action name="actionAlgorithm">

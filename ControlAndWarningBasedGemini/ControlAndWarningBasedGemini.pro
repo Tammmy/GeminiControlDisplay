@@ -1,3 +1,4 @@
+QT += charts
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -16,16 +17,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    configsonar.cpp \
     main.cpp \
     mainwindow.cpp \
-    openglwidget.cpp
+    openglwidget.cpp \
+    warninginfoconfigdialog.cpp
 
 HEADERS += \
+    configsonar.h \
     mainwindow.h \
-    openglwidget.h
+    openglwidget.h \
+    warninginfoconfigdialog.h
 
 FORMS += \
-    mainwindow.ui
+    configsonar.ui \
+    mainwindow.ui \
+    warninginfoconfigdialog.ui
 
 TRANSLATIONS += \
     ControlAndWarningBasedGemini_zh_CN.ts
